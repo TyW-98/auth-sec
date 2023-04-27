@@ -45,10 +45,21 @@ body {
     color: black
 }
 
+/* Footer */
+
+#footer {
+    color: rgb(241, 239, 239);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
 /* Home Page */
 .homepage {
     width: 50%;
-    margin: 12.5rem auto 0;
+    margin: 9.375rem auto 0;
 }
 
 .container-image {
@@ -79,4 +90,35 @@ body {
 
 .home-btns button {
     margin: .625rem;
+}
+
+/* Register Page */
+.register-logo {
+    height: 125px;
+}
+
+.register-form {
+    width: 25%;
+    margin: 125px auto;
+    text-align: center;
+    color: white;
+}
+
+.register-form input {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.register-form input:first-of-type {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.register-form input:last-of-type {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.register-btn {
+    margin: 15px 0;
 }
