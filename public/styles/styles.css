@@ -21,7 +21,6 @@ body {
     height: 12.5rem;
     margin: 0 auto;
     overflow:hidden;
-
 }
 
 .logo-img {
@@ -30,6 +29,7 @@ body {
     object-fit: cover;
     object-position: center;
     border-radius: 25px;
+    border: solid white
 }
 
 .home-header, .home-cta {
