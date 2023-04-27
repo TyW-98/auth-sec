@@ -31,9 +31,15 @@ app
     console.log(req.body.password);
   });
 
-app.route("/login").get((req, res) => {
-  res.render("login");
-});
+app
+  .route("/login")
+  .get((req, res) => {
+    res.render("login");
+  })
+  .post((req, res) => {
+    console.log(req.body.email);
+    console.log(req.body.password);
+  });
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
