@@ -41,3 +41,7 @@ body {
     text-align: center;
     align-items: center;
 }
+
+.home-btns button {
+    margin: .625rem;
+}

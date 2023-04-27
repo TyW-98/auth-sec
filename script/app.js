@@ -18,8 +18,16 @@ app
     res.render("home");
   })
   .post((req, res) => {
-    console.log(req.body.submitBtn);
+    res.redirect("/" + req.body.submitBtn);
   });
+
+app.route("/register").get((req, res) => {
+  res.render("register");
+});
+
+app.route("/login").get((req, res) => {
+    res.render('login');
+})
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
