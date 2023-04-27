@@ -28,8 +28,8 @@ body {
 }
 
 .brand img {
-    height: 50px;
-    width: 50px;
+    height: 3.125rem;
+    width: 3.125rem;
     border-radius: 5px;
     border: solid 1px white;
 }
@@ -92,19 +92,30 @@ body {
     margin: .625rem;
 }
 
-/* Register Page */
-.register-logo {
-    height: 125px;
+/* Register and Login Page */
+
+.register-logo, .login-logo {
+    height: 7.8125rem;
+    border-radius: 25px;
+    border: 3px solid white;
 }
 
-.register-form {
+.register-form, .login-form {
     width: 25%;
-    margin: 125px auto;
+    margin: 7.8125rem auto;
     text-align: center;
-    color: white;
+    color: black;
+    background-color: rgba(216, 183, 140, 0.685);
+    padding: 10px 0;
+    border-radius: 25px;
 }
 
-.register-form input {
+.register-form h1, .login-form h3 {
+    width: max-content;
+    margin: 0 auto 10px;
+}
+
+.register-form input, .login-form input {
     width: 65%;
     margin: 0 auto;
 }
@@ -119,6 +130,6 @@ body {
     border-top-left-radius: 0;
 }
 
-.register-btn {
-    margin: 15px 0;
+.register-btn, .login-btn {
+    margin: .9375rem 0;
 }
