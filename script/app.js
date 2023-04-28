@@ -41,8 +41,8 @@ app
     console.log(req.body.password);
   });
 
-app.route("/recipes").get((req, res) => {
-  res.render("recipes");
+app.route("/recipe").get((req, res) => {
+  res.render("recipeListing");
 });
 
 app.listen(3000, () => {

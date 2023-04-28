@@ -162,3 +162,8 @@ body {
     text-align: center;
 }
 
+.card-footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
