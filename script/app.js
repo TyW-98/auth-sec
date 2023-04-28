@@ -41,8 +41,17 @@ app
     console.log(req.body.password);
   });
 
-app.route("/recipe").get((req, res) => {
-  res.render("recipeListing");
+app
+  .route("/recipe")
+  .get((req, res) => {
+    res.render("recipeListing");
+  })
+  .post((req, res) => {
+    res.redirect("/recipe/" + req.body.viewRecipe);
+  });
+
+app.route("/recipe/:recipeID").get((req, res) => {
+  res.render("recipe");
 });
 
 app.listen(3000, () => {
