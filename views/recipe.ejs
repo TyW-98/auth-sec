@@ -1,0 +1,88 @@
+<%- include('partials/header') %>
+
+<div class="recipe-page">
+  <div class="row">
+    <div class="col-md-4 recipe-image">
+      <img src="/images/logo-2.jpeg" alt="recipe image" class="img-fluid" />
+    </div>
+    <div class="col-md-8 recipe-description">
+      <h1>
+        <strong>Grilled Lemon-Pepper Chicken</strong>
+      </h1>
+      <p>
+        This flavorful chicken dish is perfect for summer grilling. The chicken
+        breasts are seasoned with zesty lemon and spicy black pepper, then
+        grilled to juicy perfection. Serve it alongside your favorite grilled
+        vegetables for a healthy and delicious meal.
+      </p>
+    </div>
+  </div>
+  <div class="row recipe-instructions">
+    <div class="col-md-4 ingredient-list">
+      <h3>Ingredients:</h3>
+      <ul>
+        <li>
+          <input type="checkbox" class="ingredient" /> 4 boneless, skinless
+          chicken breasts
+        </li>
+        <li>
+          <input type="checkbox" class="ingredient" /> 1/4 cup fresh lemon juice
+        </li>
+        <li><input type="checkbox" class="ingredient" /> 1/4 cup olive oil</li>
+        <li>
+          <input type="checkbox" class="ingredient" /> 4 cloves garlic, minced
+        </li>
+        <li>
+          <input type="checkbox" class="ingredient" /> 2 teaspoons freshly
+          ground black pepper
+        </li>
+        <li><input type="checkbox" class="ingredient" /> 1 teaspoon salt</li>
+      </ul>
+    </div>
+    <div class="col-md-8 cooking-instruction">
+      <h3>Instruction</h3>
+      <ol>
+        <li>
+          In a small bowl, whisk together the olive oil, lemon juice, lemon
+          zest, black pepper, salt, and garlic powder.
+        </li>
+        <li>
+          Place the chicken breasts in a large resealable plastic bag, pour in
+          the marinade, and seal the bag. Turn the bag to coat the chicken
+          evenly. Marinate in the refrigerator for at least 1 hour, or up to 8
+          hours.
+        </li>
+        <li>
+          Preheat the grill to medium-high heat. Remove the chicken from the
+          marinade and discard the marinade.
+        </li>
+        <li>
+          Grill the chicken for 6 to 8 minutes per side, or until the internal
+          temperature reaches 165°F (74°C). Allow the chicken to rest for 5
+          minutes before slicing and serving.
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="comment-section">
+    <h3>Comments</h3>
+    <div class="comment">
+      <h5>Alex kagosi</h5>
+      <p>
+        Wow, this grilled chicken recipe was a hit with my family! The
+        combination of zesty lemon and spicy black pepper was just perfect. We
+        loved how juicy and flavorful the chicken turned out. Will definitely be
+        making this again soon!
+      </p>
+    </div>
+    <div class="post-comment">
+      <form method="post" action="/recipe">
+        <label for="writeComment"><strong>Post Your Comment</strong></label>
+        <textarea rows="5" cols="92" name="writeComment"></textarea>
+        <button type="submit" name="postBtn" class="btn btn-lg btn-warning text-end">POST</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

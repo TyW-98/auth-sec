@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Header */
+.navbar {
+    margin: 0 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16pt;
+    font-weight: 600;
+}
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+}
+
+.brand img {
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 5px;
+    border: solid 1px white;
+}
+
+
+.nav-item {
+    margin: 0 .625rem;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: black
+}
+
+/* Footer */
+
+#footer {
+    color: rgb(241, 239, 239);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    margin-top: auto;
+    padding-top: .9375rem;
+    height: 3.125rem;
+    background-color: rgb(8, 68, 196);
+}
+
+/* Home Page */
+.homepage {
+    width: 50%;
+    margin: 9.375rem auto 0;
+}
+
+.container-image {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+    border: solid white
+}
+
+.home-header,
+.home-cta {
+    text-align: center;
+    color: white;
+}
+
+.home-btns {
+    text-align: center;
+    align-items: center;
+}
+
+.home-btns button {
+    margin: .625rem;
+}
+
+/* Register and Login Page */
+.register-logo,
+.login-logo {
+    height: 7.8125rem;
+    border-radius: 25px;
+    border: 3px solid white;
+}
+
+.register-form,
+.login-form {
+    width: 25%;
+    margin: 7.8125rem auto 0;
+    text-align: center;
+    color: black;
+    background-color: rgba(216, 183, 140, 0.685);
+    padding: 10px 0;
+    border-radius: 25px;
+}
+
+.register-form h1,
+.login-form h3 {
+    width: max-content;
+    margin: 0 auto 10px;
+}
+
+.register-form input,
+.login-form input {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.register-form input:first-of-type {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.register-form input:last-of-type {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.register-btn,
+.login-btn {
+    margin: .9375rem 0;
+}
+
+/* Recipe Listing page */
+.recipe-listing-page {
+    overflow: visible;
+    overflow-x: hidden;
+}
+
+.recipe-header {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(210, 105, 30, 0.658);
+    color: rgb(70, 70, 70);
+}
+
+.col {
+    width: 25rem;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+.recipe-listing {
+    margin: 0 auto;
+    max-width: 65%;
+    text-align: center;
+}
+
+.card-footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Individual listing page */
+.recipe-page {
+    width: 37.5%;
+    background-color: antiquewhite;
+    margin: 3.125rem auto 100px;
+    border-radius: 25px;
+}
+
+.recipe-image {
+    object-fit: cover;
+    padding: 0;
+}
+
+.recipe-description {
+    padding: 1.5625rem;
+}
+
+.recipe-description h1 {
+    font-size: 21pt;
+}
+
+.recipe-description p {
+    text-align: justify;
+}
+
+.recipe-instructions {
+    border-top: solid black 1px;
+    width: 100%;
+    margin: 0;
+}
+
+.ingredient-list {
+    border-right: solid black;
+    border-width: 2px;
+}
+
+.ingredient-list li {
+    font-size: 11pt;
+    padding-bottom: .625rem;
+}
+
+.cooking-instruction {
+    padding-left: .625rem
+}
+
+.comment-section {
+    border-top: solid black 1px;
+    padding: .3125rem 1.5625rem .9375rem;
+}
+
+.comment {
+    border: solid black 1px;
+    border-radius: 25px;
+    padding: .625rem 1.5625rem;
+}
+
+.comment h5 {
+    text-decoration: underline;
+}
+
+.post-comment {
+    margin: 10px auto;
+}
+
+.post-comment textarea {
+    padding: 10px;
+}
+
+.post-comment button {
+    position: relative;
+    left: 90%;
+}

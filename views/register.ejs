@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+<form method="post" action="/register" class="register-form">
+  <img src="images/register-logo.jpeg" alt="chef-logo" class="register-logo" />
+  <h1>Sign up today</h1>
+  <h4>Discover & Share Mouthwatering Recipes</h4>
+  <input
+    type="email"
+    name="email"
+    class="form-control"
+    placeholder="Email address"
+    required
+    autofocus
+  />
+  <input
+    type="password"
+    name="password"
+    class="form-control"
+    placeholder="Password"
+    required
+  />
+  <button
+    type="submit"
+    name="registerBtn"
+    value="clicked"
+    class="register-btn btn btn-lg btn-primary btn-block"
+  >
+    Join Now
+  </button>
+</form>
+
+<%- include('partials/footer') %>

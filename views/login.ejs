@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+<form method="post" action="/login" class="login-form">
+  <img src="images/login-logo.jpeg" alt="chef-logo" class="login-logo" />
+  <h1>Welcome back!</h1>
+  <h3>Please sign in to your account</h3>
+  <input
+    type="email"
+    name="email"
+    class="form-control"
+    placeholder="Email address"
+    required
+    autofocus
+  />
+  <input
+    type="password"
+    name="password"
+    class="form-control"
+    placeholder="Password"
+    required
+  />
+  <button
+    type="submit"
+    name="loginBtn"
+    value="clicked"
+    class="login-btn btn btn-lg btn-primary btn-block"
+  >
+    Login
+  </button>
+</form>
+
+<%- include('partials/footer') %>
