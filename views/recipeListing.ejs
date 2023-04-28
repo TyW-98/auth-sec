@@ -1,6 +1,6 @@
 <%- include('partials/header') %>
 
-<div class="recipe-page">
+<div class="recipe-listing-page">
   <section class="jumbotron text-center">
     <div class="container recipe-header">
       <h1>Discover Delicious Recipes for Every Taste</h1>
@@ -32,8 +32,22 @@
               favorite grilled vegetables for a healthy and delicious meal.
             </p>
             <form method="post" action="/recipe">
-                <button type="submit" class="btn btn-outline-dark" name="viewRecipe" value="random">VIEW</button>
-                <button type="submit" class="btn btn-outline-dark" name="upvoteRecipe" value="upvote">♥ LIKE</button>
+              <button
+                type="submit"
+                class="btn btn-outline-dark"
+                name="viewRecipe"
+                value="random"
+              >
+                VIEW
+              </button>
+              <button
+                type="submit"
+                class="btn btn-outline-dark"
+                name="upvoteRecipe"
+                value="upvote"
+              >
+                ♥ LIKE
+              </button>
             </form>
           </div>
           <div class="card-footer">

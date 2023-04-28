@@ -47,7 +47,9 @@ app
     res.render("recipeListing");
   })
   .post((req, res) => {
-    res.redirect("/recipe/" + req.body.viewRecipe);
+    if (req.body.viewRecipe) {
+      res.redirect("/recipe/" + req.body.viewRecipe);
+    }
   });
 
 app.route("/recipe/:recipeID").get((req, res) => {
