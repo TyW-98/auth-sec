@@ -7,7 +7,6 @@ body {
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
 /* Header */
@@ -36,7 +35,7 @@ body {
 
 
 .nav-item {
-    margin: 0 10px;
+    margin: 0 .625rem;
     color: white;
     text-decoration: none;
 }
@@ -102,7 +101,7 @@ body {
 
 .register-form, .login-form {
     width: 25%;
-    margin: 7.8125rem auto;
+    margin: 7.8125rem auto 0;
     text-align: center;
     color: black;
     background-color: rgba(216, 183, 140, 0.685);
@@ -133,3 +132,33 @@ body {
 .register-btn, .login-btn {
     margin: .9375rem 0;
 }
+
+/* Recipe Listing page */
+.recipe-page {
+    overflow: visible;
+    overflow-x: hidden;
+}
+
+.recipe-header {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(210, 105, 30, 0.658);
+    color: rgb(70, 70, 70);
+}
+
+.col {
+    width: 25rem;
+}
+
+.row {
+    margin: 0 auto;
+    max-width: fit-content;
+}
+
+.recipe-listing {
+    margin: 0 auto;
+    max-width: 65%;
+    text-align: center;
+}
+
