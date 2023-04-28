@@ -46,7 +46,7 @@ body {
 
 /* Footer */
 
-#footer {
+#footer, #dynamic-footer {
     color: rgb(241, 239, 239);
     position: fixed;
     bottom: 0;
@@ -57,6 +57,10 @@ body {
     padding-top: .9375rem;
     height: 3.125rem;
     background-color: rgb(8, 68, 196);
+}
+
+#dynamic-footer {
+    position: relative;
 }
 
 /* Home Page */
@@ -180,8 +184,9 @@ body {
 .recipe-page {
     width: 37.5%;
     background-color: antiquewhite;
-    margin: 3.125rem auto 100px;
+    margin: 3.125rem auto;
     border-radius: 25px;
+    min-height: 100vh;
 }
 
 .recipe-image {
