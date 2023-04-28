@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 body {
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
@@ -47,11 +48,15 @@ body {
 
 #footer {
     color: rgb(241, 239, 239);
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
     font-weight: 600;
+    margin-top: auto;
+    padding-top: .9375rem;
+    height: 3.125rem;
+    background-color: rgb(8, 68, 196);
 }
 
 /* Home Page */
@@ -174,10 +179,8 @@ body {
 /* Individual listing page */
 .recipe-page {
     width: 37.5%;
-    overflow-y: visible;
-    overflow-x: hidden;
     background-color: antiquewhite;
-    margin: 3.125rem auto 0;
+    margin: 3.125rem auto 100px;
     border-radius: 25px;
 }
 
@@ -231,4 +234,17 @@ body {
 
 .comment h5 {
     text-decoration: underline;
+}
+
+.post-comment {
+    margin: 10px auto;
+}
+
+.post-comment textarea {
+    padding: 10px;
+}
+
+.post-comment button {
+    position: relative;
+    left: 90%;
 }
