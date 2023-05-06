@@ -58,7 +58,9 @@ app.route("/recipe/:recipeID").get((req, res) => {
 
 app.route("/post").get((req, res) => {
   res.render("post");
-});
+}).post((req, res) => {
+  console.log(req.body);
+})
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000");

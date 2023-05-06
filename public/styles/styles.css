@@ -261,7 +261,17 @@ body {
 .post-page {
     width: 50%;
     margin: 10rem auto 0;
-    background-color: rgba(210, 105, 30, 0.658);
+    background-color: rgba(216, 183, 140, 0.685);
     padding: 1.0938rem;
     border-radius: 25px;
+}
+
+#ingredient-input {
+    width: 50%;
+    display: inline-block;  
+}
+
+.submit-post {
+    margin-top: 10px;
+    display: block;
 }
