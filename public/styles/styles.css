@@ -131,12 +131,14 @@ body {
     margin: 0 auto;
 }
 
-.register-form input:first-of-type {
+.register-form input:first-of-type,
+.login-form input:first-of-type {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
 
-.register-form input:last-of-type {
+.register-form input:last-of-type,
+.login-form input:last-of-type {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
 }
@@ -150,6 +152,7 @@ body {
 .recipe-listing-page {
     overflow: visible;
     overflow-x: hidden;
+    margin-bottom: 2.8125rem;
 }
 
 .recipe-header {
@@ -252,4 +255,13 @@ body {
 .post-comment button {
     position: relative;
     left: 90%;
+}
+
+/* Post Recipe page */
+.post-page {
+    width: 50%;
+    margin: 10rem auto 0;
+    background-color: rgba(210, 105, 30, 0.658);
+    padding: 1.0938rem;
+    border-radius: 25px;
 }
