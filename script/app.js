@@ -4,7 +4,7 @@ const path = require("path");
 const https = require("https");
 const mongoose = require("mongoose");
 
-// mongoose.connect("mongodb://127.0.0.1:27017/dbName");
+// mongoose.connect("mongodb://127.0.0.1:27017/recipeDB");
 
 const app = express();
 
@@ -60,6 +60,13 @@ app.route("/post").get((req, res) => {
   res.render("post");
 }).post((req, res) => {
   console.log(req.body);
+})
+
+app.route("/ingredients").post((req, res) => {
+  const {inregredients} = req.body;
+  console.log(inregredients);
+
+  res.sendStatus(200);
 })
 
 app.listen(3000, () => {

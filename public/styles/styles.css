@@ -260,7 +260,7 @@ body {
 /* Post Recipe page */
 .post-page {
     width: 50%;
-    margin: 10rem auto 0;
+    margin: 4.6875rem auto 1.25rem;
     background-color: rgba(216, 183, 140, 0.685);
     padding: 1.0938rem;
     border-radius: 25px;
