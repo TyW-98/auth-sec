@@ -1,18 +1,36 @@
 <%- include('partials/header') %>
 
-<form method="post" action="/post">
+<div class="post-page container-fluid">
+  <form method="post" action="/post">
     <div class="mb-3">
-        <label for="recipeTitle" class="form-label">Recipe Name</label>
-        <input type="text" class="form-control" name="recipeTitle" id="recipeTitle"/>
+      <label for="recipeTitle" class="form-label">Recipe Name</label>
+      <input
+        type="text"
+        class="form-control"
+        name="recipeTitle"
+        id="recipeTitle"
+      />
     </div>
     <div class="mb-3">
-        <label for="recipeInstruction" class="form-label">Instructions</label>
-        <textarea class="form-control" name="recipeInstruction" id="recipeInstructions" rows="5" cols="80"></textarea>
+      <label for="recipeInstruction" class="form-label">Instructions</label>
+      <textarea
+        class="form-control"
+        name="recipeInstruction"
+        id="recipeInstructions"
+        rows="5"
+        cols="80"
+      ></textarea>
     </div>
     <ul id="ingredient-list"></ul>
     <label for="ingredient-input" class="form-label">Ingredients</label>
-    <input type="text" class="form-control" name="ingredientInput" id="ingredient-input" />
-</form>
+    <input
+      type="text"
+      class="form-control"
+      name="ingredientInput"
+      id="ingredient-input"
+    />
+  </form>
+</div>
 
 <script src="/script/post.js"></script>
 
