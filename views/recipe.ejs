@@ -78,11 +78,13 @@
     <div class="post-comment">
       <form method="post" action="/recipe">
         <label for="writeComment"><strong>Post Your Comment</strong></label>
-        <textarea rows="5" cols="80" name="writeComment" class="comment-text"></textarea>
+        <textarea rows="5" cols="0" name="writeComment" class="comment-text"></textarea>
         <button type="submit" name="postBtn" class="btn btn-lg btn-warning text-end">POST</button>
       </form>
     </div>
   </div>
 </div>
+
+<script src="/script/recipe.js"></script>
 
 <%- include('partials/dynamic-footer') %>

@@ -1,5 +1,5 @@
-console.log("Testing")
 
+// Post Page dynamic ingredient list
 const ingredientInput = document.getElementById("ingredient-input");
 const ingredientList = document.getElementById("ingredient-list");
 
