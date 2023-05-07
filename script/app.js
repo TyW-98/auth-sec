@@ -4,7 +4,7 @@ const path = require("path");
 const https = require("https");
 const mongoose = require("mongoose");
 
-// mongoose.connect("mongodb://127.0.0.1:27017/recipeDB");
+mongoose.connect("mongodb://127.0.0.1:27017/recipeWebDB");
 
 const app = express();
 

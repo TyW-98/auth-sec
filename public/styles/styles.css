@@ -143,6 +143,10 @@ body {
     border-top-left-radius: 0;
 }
 
+.email-input {
+    border-radius: 0;
+}
+
 .register-btn,
 .login-btn {
     margin: .9375rem 0;
