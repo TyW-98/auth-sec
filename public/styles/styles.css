@@ -59,9 +59,6 @@ body {
     background-color: rgb(8, 68, 196);
 }
 
-#dynamic-footer {
-    position: relative;
-}
 
 /* Home Page */
 .homepage {
@@ -141,6 +138,10 @@ body {
 .login-form input:last-of-type {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
+}
+
+.email-input {
+    border-radius: 0;
 }
 
 .register-btn,
